@@ -107,9 +107,9 @@ function MainDiv() {
       <div className="violet">
         <div className="card_front">
           <Inside_front />
-          <p className="card_number">{cardNumber}</p>
+          <p className="card_number">{cardNumber || "0000 0000 0000 0000"} </p>
           <div className="card_bottom">
-            <p className="card_name">{name}</p>
+            <p className="card_name">{name || "Jane Appleseed"}</p>
             <p className="card_expiry">
               {month || "00"}/{year || "00"}
             </p>
@@ -120,7 +120,7 @@ function MainDiv() {
           <div className="card_line"></div>
           <div className="card_cvc_div">
             <div className="card_cvc_gray">
-              <p className="card_cvc">{cvc}</p>
+              <p className="card_cvc">{cvc || "000"}</p>
             </div>
           </div>
         </div>
